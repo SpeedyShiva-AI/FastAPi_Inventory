@@ -1,0 +1,20 @@
+[
+    {
+        "name": "Laptop",
+        "current_stock": 15,
+        "min_reorder_level": 5,
+        "price": 45000.0
+    },
+    {
+        "name": "Mouse",
+        "current_stock": 80,
+        "min_reorder_level": 20,
+        "price": 500.0
+    },
+    {
+        "name": "Keyboard",
+        "current_stock": 40,
+        "min_reorder_level": 10,
+        "price": 1200.0
+    }
+]
