@@ -68,6 +68,16 @@ def delete_product(product_id: int, db: Session = Depends(get_db)):
 
     return {"message": "Product deleted successfully"}
 
+@app.get("/inventory/reorder_recommendations")
+def reorder_recommendation(db: Session = Depends(get_db)):
+
+    products=db.query(Product).all()
+    reorder_list=[]
+    for p in products:
+        if p.current_stock <= p.min_reorder_level*1.25:
+            reorder_list.append(p)
+    return reorder_list
+
 
 # @app.post("/products")
 # def check():
