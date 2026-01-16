@@ -13,7 +13,7 @@ It allows managing products in an inventory and automatically identifies product
 - API Documentation: Swagger UI (auto-generated)
 
 ## 📁 Project Structure (Current)
-
+```
  inventory/
       ├── main.py
       ├── models/
@@ -23,16 +23,26 @@ It allows managing products in an inventory and automatically identifies product
       │   └── product.py
       |__ requirements.txt
       ├── README.md
+```
 
 # ⚙️ Environment Setup
-**1️⃣ Create virtual environment**
-`python -m venv venv`
--Activate it:
-Windows
-venv\Scripts\activate
 
-Linux / Mac
+## 1️⃣ Create Virtual Environment
+```bash
+python -m venv venv
+```
+
+### Activate the Virtual Environment
+
+**Windows**
+```bash
+venv\Scripts\activate
+```
+
+**Linux / macOS**
+```bash
 source venv/bin/activate
+```
 
 # 2️⃣ Install dependencies
 pip install fastapi uvicorn sqlalchemy psycopg2-binary pydantic
