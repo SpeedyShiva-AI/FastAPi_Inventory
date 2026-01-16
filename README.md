@@ -63,7 +63,7 @@ source venv/bin/activate
 ## 📌 API Endpoints
 🔹 Create Product
     POST /products
-
+```
 - Request Body (JSON):
 {
   "name": "Pen",
@@ -71,6 +71,7 @@ source venv/bin/activate
   "min_reorder_level": 20,
   "price": 10.5
 }
+```
 🔹 Get All Products:
     GET /products
 
