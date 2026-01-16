@@ -5,12 +5,12 @@ This project is a RESTful Inventory Management API built using FastAPI and Postg
 It allows managing products in an inventory and automatically identifies products that need to be reordered based on a simple business rule.
 
 ## 🛠️ Tech Stack
-Backend Framework: FastAPI
-ASGI Server: Uvicorn
-Database: PostgreSQL
-ORM: SQLAlchemy
-Data Validation: Pydantic
-API Documentation: Swagger UI (auto-generated)
+- Backend Framework: FastAPI
+- ASGI Server: Uvicorn
+- Database: PostgreSQL
+- ORM: SQLAlchemy
+- Data Validation: Pydantic
+- API Documentation: Swagger UI (auto-generated)
 
 ## 📁 Project Structure (Current)
 
@@ -73,7 +73,7 @@ pip install fastapi uvicorn sqlalchemy psycopg2-binary pydantic
 🔹 Reorder Recommendation:
     GET /inventory/reorder_recommendations
 
-# * Reorder Logic:
+# Reorder Logic:
 - A product is recommended for reorder if:
 - current_stock <= 1.25 × min_reorder_level
 
