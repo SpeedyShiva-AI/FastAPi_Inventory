@@ -45,7 +45,7 @@ source venv/bin/activate
 ```
 
 # 2️⃣ Install dependencies
-- pip install fastapi uvicorn sqlalchemy psycopg2-binary pydantic
+- pip install fastapi uvicorn sqlalchemy psycopg2 pydantic
 (or from requirements.txt if created)
 
 ## 🗄️ Database Setup (PostgreSQL)
@@ -55,9 +55,9 @@ source venv/bin/activate
  inventory_db
 - 3.Update database connection in models/database.py
 
-- DATABASE_URL = "postgresql://username:password@localhost:5432/inventory_db"
+    - DATABASE_URL = "postgresql://username:password@localhost:5432/inventory_db"
 
- - Tables are created automatically using:
+    - Tables are created automatically using:
     Base.metadata.create_all(bind=engine)
 
 ## 📌 API Endpoints
