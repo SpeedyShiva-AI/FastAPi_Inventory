@@ -25,10 +25,9 @@ It allows managing products in an inventory and automatically identifies product
       ├── README.md
 
 # ⚙️ Environment Setup
-1️⃣ Create virtual environment
-python -m venv venv
-Activate it:
-
+**1️⃣ Create virtual environment**
+`python -m venv venv`
+-Activate it:
 Windows
 venv\Scripts\activate
 
